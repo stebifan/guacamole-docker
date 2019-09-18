@@ -24,4 +24,6 @@ services:
                 - MYSQL_USER=guacamole
                 - MYSQL_PASSWORD=guacamole
             volumes:
-                - ./data:/var/lib/mysql
+                - data:/var/lib/mysql
+volumes:
+        data:
